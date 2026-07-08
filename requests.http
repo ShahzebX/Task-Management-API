@@ -1,0 +1,32 @@
+### GET request to example server
+GET http://localhost:8080
+
+###
+GET http://localhost:8080/api/v1/tasks
+
+###
+GET http://localhost:8080/api/v1/tasks/3
+
+###
+POST http://localhost:8080/api/v1/tasks
+Content-Type: application/json
+
+{
+  "title": "Project",
+  "description": "Build a prototype for the client to share in the meeting",
+  "isComplete": false
+}
+
+###
+PUT http://localhost:8080/api/v1/tasks/3
+Content-Type: application/json
+
+{
+  "id": 3,
+  "title": "Sleep",
+  "description": "Min 8 hours",
+  "isComplete": false
+}
+
+###
+DELETE http://localhost:8080/api/v1/tasks/3
